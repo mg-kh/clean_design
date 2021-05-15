@@ -1,0 +1,63 @@
+.navbar__items {
+     font-size: 14px;
+     font-weight: 500;
+     position: relative;
+
+     & a {
+          transition: color 0.3s;
+     }
+
+     &::before {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 3px;
+          background: $primary-color;
+          bottom: 0;
+          left: 0;
+          transition: width 0.3s;
+     }
+
+     &:hover {
+          & a {
+               color: $primary-color !important;
+          }
+
+          &::before {
+               width: 100%;
+          }
+
+     }
+
+}
+
+.navbtn__container {
+     position: relative;
+     position: relative;
+     width: 150px;
+     height: 60px;
+
+     .navbar__btn {
+          font-weight: 500;
+          font-size: 15px;
+          position: absolute;
+          transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+          border-width: 2px !important;
+
+          &:hover {
+               box-shadow: 0px 2px 5px 1px #00000040;
+          }
+     }
+
+}
+
+
+
+.navbar__logo {
+     width: 100px;
+
+     & svg {
+          width: 100%;
+          height: 100%;
+     }
+}

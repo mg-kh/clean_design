@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <b-container fluid class="p-0">
+    <hero-section></hero-section>
+    <site-property></site-property>
+    <verticle-tab></verticle-tab>
+    <the-facts></the-facts>
+    <the-wave></the-wave>
+    <the-price></the-price>
+  </b-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import HeroSection from "@/components/HeroSection";
+import SiteProperty from "@/components/SiteProperty";
+import VerticleTab from "@/components/VerticleTab";
+import TheFacts from "@/components/TheFacts";
+import TheWave from "@/components/TheWave";
+import ThePrice from "@/components/ThePrice";
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    HeroSection,
+    SiteProperty,
+    VerticleTab,
+    TheFacts,
+    TheWave,
+    ThePrice,
   },
 };
 </script>

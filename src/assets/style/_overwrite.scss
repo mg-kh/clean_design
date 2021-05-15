@@ -1,0 +1,41 @@
+$theme-colors: ("primary": $primary-color,
+  "info": $info-color,
+  "danger": $danger-color,
+  "success": $success-color,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.heroSection {
+  .swiper-container {
+    transition: visibility 0.5s;
+    transition-delay: 0.5s;
+
+    .swiper__arrow-space {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 60px;
+      height: 60px;
+      background-color: #209cee;
+      border-radius: 50%;
+      visibility: hidden;
+
+      &:after {
+        font-size: 20px !important;
+        color: white;
+      }
+    }
+
+    &:hover {
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        visibility: visible;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.factSection {
+     .factSection__title {
+          @extend %section-title
+     }
+
+     .factSection__card {
+          text-align: center;
+          border: 0;
+
+          .factSection__card__title {
+               font-size: 28px;
+               color: #094267bf;
+          }
+
+          .factSection__card__count {
+               font-size: 60px;
+               font-weight: 500;
+               color: $distinct-color;
+          }
+
+          .factSection__card__state {
+               font-size: 16px;
+               margin: 0;
+               color: #09426757;
+          }
+     }
+}

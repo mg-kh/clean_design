@@ -1,0 +1,25 @@
+.heroSection {
+
+     .hero__text {
+          h3 {
+               font-size: 45px;
+               color: $title-color;
+               font-weight: 500;
+          }
+
+          p {
+               font-size: 16px;
+               font-weight: 300;
+               margin: 30px auto;
+               color: $text-color;
+          }
+
+          .hero__btn {
+               font-size: 15px;
+          }
+
+          .hero__img {
+               max-width: 200px;
+          }
+     }
+}
