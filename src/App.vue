@@ -17,22 +17,24 @@ export default {
   components: {
     TheNavbar,
   },
-  metaInfo: {
-    meta: [
-      // Facebook OpenGraph
-      { property: "og:title", content: "Vue static web design" },
-      { property: "og:site_name", content: "Clean Design" },
-      { property: "og:type", content: "website" },
-      {
-        property: "og:image",
-        content:
-          "https://clean-design.netlify.app//assets/images/coffee_cup.png",
-      },
-      {
-        property: "og:description",
-        content: "Transform coffee into ideas!",
-      },
-    ],
+  metaInfo() {
+    return {
+      meta: [
+        // Facebook OpenGraph
+        { property: "og:title", content: "Vue static web design" },
+        { property: "og:site_name", content: "Clean Design" },
+        { property: "og:type", content: "website" },
+        {
+          property: "og:image",
+          content:
+            "https://clean-design.netlify.app//assets/images/coffee_cup.png",
+        },
+        {
+          property: "og:description",
+          content: "Transform coffee into ideas!",
+        },
+      ],
+    };
   },
 };
 </script>
