@@ -17,20 +17,18 @@ export default {
   components: {
     TheNavbar,
   },
-  metaInfo() {
-    return {
-      meta: [
-        // Facebook OpenGraph
-        { property: "og:title", content: "Vue static web design" },
-        { property: "og:site_name", content: "Clean Design" },
-        { property: "og:type", content: "website" },
-        { property: "og:image", content: this.logo },
-        {
-          property: "og:description",
-          content: "Transform coffee into ideas!",
-        },
-      ],
-    };
+  metaInfo: {
+    meta: [
+      // Facebook OpenGraph
+      { property: "og:title", content: "Vue static web design" },
+      { property: "og:site_name", content: "Clean Design" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: this.logo },
+      {
+        property: "og:description",
+        content: "Transform coffee into ideas!",
+      },
+    ],
   },
 };
 </script>
