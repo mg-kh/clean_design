@@ -1,25 +1,24 @@
 .siteProperty {
-     .siteProperty__section-detail {
-          @extend %section-title;
-     }
+  .siteProperty__section-detail {
+    @extend %section-title;
+  }
 
+  .propertyCard {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px 5px #209cee26;
 
-     .propertyCard {
-          margin-bottom: 30px;
-          border-radius: 15px;
-          box-shadow: 0px 3px 5px 5px #209cee26;
+    .card-title {
+      font-size: 20px;
+    }
 
-          .card-title {
-               font-size: 20px;
-          }
+    .propertyCard__text {
+      font-weight: 300;
+      font-size: 15px;
+    }
 
-          .propertyCard__text {
-               font-weight: 300;
-               font-size: 15px;
-          }
-
-          &:nth-child(2) {
-               margin-left: 40px;
-          }
-     }
+    &:nth-child(2) {
+      margin-left: 40px;
+    }
+  }
 }

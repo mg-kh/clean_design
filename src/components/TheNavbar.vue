@@ -39,7 +39,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-auto" v-scroll-spy-active v-scroll-spy-link>
           <b-nav-item class="text-uppercase px-4 navbar__items" href="#"
             >Home</b-nav-item
           >
@@ -50,27 +50,27 @@
             >Service</b-nav-item
           >
           <b-nav-item class="text-uppercase px-4 navbar__items" href="#"
-            >Pricing</b-nav-item
+            >Statistics</b-nav-item
           >
           <b-nav-item class="text-uppercase px-4 navbar__items" href="#"
-            >Faq</b-nav-item
-          >
-          <b-nav-item class="text-uppercase px-4 navbar__items" href="#"
-            >Contact</b-nav-item
+            >Price</b-nav-item
           >
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <div class="navbtn__container">
-            <b-button
-              v-animate-css.hover="'pulse'"
-              size="lg"
-              variant="outline-primary"
-              class="my-2 my-sm-0 navbar__btn px-4 py-3"
-              type="submit"
-              >Hire Me Now</b-button
-            >
+            <a href="https://github.com/mg-kh" class="text-decoration-none">
+              <b-button
+                v-animate-css.hover="'pulse'"
+                size="lg"
+                variant="outline-primary"
+                class="my-2 my-sm-0 navbar__btn px-4 py-3"
+                type="submit"
+              >
+                Hire me!
+              </b-button>
+            </a>
           </div>
         </b-navbar-nav>
       </b-collapse>

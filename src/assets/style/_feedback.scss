@@ -1,0 +1,137 @@
+.feedbackSection {
+  .feedbackSection__title {
+    @extend %section-title;
+  }
+  .swiper-slide {
+    padding: 50px 20px;
+  }
+  .swiper-button-prev:after {
+    color: $primary-color;
+  }
+  .swiper-button-next:after {
+    color: $primary-color;
+  }
+
+  .heart__wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+  }
+
+  .feedback-card__wrapper {
+    .photo__card {
+      $card-width: 200px;
+      position: relative;
+      max-width: $card-width;
+
+      .card-body {
+        position: relative;
+        img {
+          max-width: $card-width;
+        }
+
+        .customer-name {
+          position: absolute;
+          left: 33px;
+          bottom: -33px;
+          font-weight: 100;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 10%;
+          height: 10%;
+          background: $primary-color;
+          top: 1%;
+          left: 101%;
+          z-index: -1;
+          box-shadow: 0px 0px 15px 4px #75d4b278;
+          border-radius: 50%;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20%;
+          height: 20%;
+          background: $primary-color;
+          top: 97%;
+          left: -20px;
+          z-index: -1;
+          border-radius: 50%;
+          box-shadow: 0px 0px 15px 4px #75d4b278;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 103%;
+        height: 95%;
+        background: $primary-color;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 40%;
+        z-index: -1;
+        box-shadow: 0px 0px 15px 4px #75d4b278;
+        animation: fbCardCircleAni 6s alternate infinite;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        background: $primary-color;
+        transform: translate(-50%, -50%);
+        top: 82%;
+        left: 83%;
+        box-shadow: 0px 0px 15px 4px #75d4b278;
+        z-index: -2;
+        border-bottom-right-radius: 26px;
+      }
+    }
+  }
+
+  .review__wrapper {
+    .review {
+      position: relative;
+      font-weight: 100;
+      line-height: 36px;
+      @extend %noselect;
+
+      &::before {
+        content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjx0aXRsZS8+PGRlc2MvPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJBcnRib2FyZC1Db3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDA3LjAwMDAwMCwgLTkuMDAwMDAwKSI+PHBhdGggZD0iTTQ0OC42MjExLDM3LjE2NDYgQzQ0OC4zNjkxLDM2LjM4ODYgNDQ3LjkzMjEsMzUuNjc3NiA0NDcuMzI0MSwzNS4wMzQ2IEM0NDYuNjg3MSwzNC4zNjI2IDQ0NS44NTAxLDMzLjg0MjYgNDQ0LjgxMjEsMzMuNDY2NiBDNDQzLjc3MzEsMzMuMDkzNiA0NDIuNDM5MSwzMi45MDQ2IDQ0MC43OTUxLDMyLjkwNDYgTDQzOC41NjQxLDMyLjkwNDYgQzQzOC44MzAxLDMwLjE1ODYgNDM5LjgwODEsMjcuODIxNiA0NDEuNTAwMSwyNS44ODk2IEM0NDMuMTg5MSwyMy45NjM2IDQ0NS41MzExLDIyLjI2ODYgNDQ4LjUyNTEsMjAuODE0NiBMNDQ2LjcwOTEsMTguMDAwNiBDNDQyLjc2NzEsMTkuNjc5NiA0MzkuMzk0MSwyMi4xMzU2IDQzNi41OTIxLDI1LjM3OTYgQzQzMy43OTExLDI4LjYyNjYgNDMyLjM5NjEsMzEuODQzNiA0MzIuMzk2MSwzNS4wMzQ2IEM0MzIuMzk2MSwzOC40NjI2IDQzMy4yMDUxLDQxLjE1MTYgNDM0LjgzNjEsNDMuMDkyNiBDNDM2LjQ2NzEsNDUuMDMzNiA0MzguODAzMSw0Ni4wMDA2IDQ0MS44NDAxLDQ2LjAwMDYgQzQ0My43NjcxLDQ2LjAwMDYgNDQ1LjQ0MTEsNDUuMzU3NiA0NDYuODY1MSw0NC4wNzI2IEM0NDguMjg3MSw0Mi43ODk2IDQ0OS4wMDAxLDQxLjI4NjYgNDQ5LjAwMDEsMzkuNTcyNiBDNDQ5LjAwMDEsMzguNzQ1NiA0NDguODc1MSwzNy45NDA2IDQ0OC42MjExLDM3LjE2NDYgTTQyOC4yMjUxLDM3LjE2NDYgQzQyNy45NzExLDM2LjM4ODYgNDI3LjUzNTEsMzUuNjc3NiA0MjYuOTI2MSwzNS4wMzQ2IEM0MjYuMjkxMSwzNC4zNjI2IDQyNS40NTMxLDMzLjg0MjYgNDI0LjQxNDEsMzMuNDY2NiBDNDIzLjM3NzEsMzMuMDkzNiA0MjIuMDQzMSwzMi45MDQ2IDQyMC4zOTgxLDMyLjkwNDYgTDQxOC4xNjYxLDMyLjkwNDYgQzQxOC40MzMxLDMwLjE1ODYgNDE5LjQxMDEsMjcuODIxNiA0MjEuMTAxMSwyNS44ODk2IEM0MjIuNzkxMSwyMy45NjM2IDQyNS4xMzUxLDIyLjI2ODYgNDI4LjEyNzEsMjAuODE0NiBMNDI2LjMxMjEsMTguMDAwNiBDNDIyLjM2OTEsMTkuNjc5NiA0MTguOTk4MSwyMi4xMzU2IDQxNi4xOTUxLDI1LjM3OTYgQzQxMy4zOTQxLDI4LjYyNjYgNDEyLjAwMDEsMzEuODQzNiA0MTIuMDAwMSwzNS4wMzQ2IEM0MTIuMDAwMSwzOC40NjI2IDQxMi44MDcxLDQxLjE1MTYgNDE0LjQzOTEsNDMuMDkyNiBDNDE2LjA2ODEsNDUuMDMzNiA0MTguNDA0MSw0Ni4wMDA2IDQyMS40NDMxLDQ2LjAwMDYgQzQyMy4zNjkxLDQ2LjAwMDYgNDI1LjA0NTEsNDUuMzU3NiA0MjYuNDY5MSw0NC4wNzI2IEM0MjcuODkxMSw0Mi43ODk2IDQyOC42MDMxLDQxLjI4NjYgNDI4LjYwMzEsMzkuNTcyNiBDNDI4LjYwMzEsMzguNzQ1NiA0MjguNDc2MSwzNy45NDA2IDQyOC4yMjUxLDM3LjE2NDYiIGZpbGw9IiMwMDAwMDAiIGlkPSJxdW90ZTIiLz48ZyBpZD0ic2xpY2VzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0Ny4wMDAwMDAsIDkuMDAwMDAwKSIvPjwvZz48L2c+PC9zdmc+);
+        position: absolute;
+        transform: rotate(6deg) scale(2);
+        opacity: 0.3;
+        z-index: -1;
+        top: 2px;
+        left: -10px;
+      }
+
+      &::after {
+        content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSIwMDRfUk9NQU5USUMiIGhlaWdodD0iMjQiIGlkPSJfMDA0X1JPTUFOVElDIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGUvPjxwYXRoIGQ9Ik05Ljk1MDIsMTdDOC4xMTYyLDE3LDIuMDAxLDEyLjMwNzYsMi4wMDEsNy4wNzM3YTYuNTg5NjUsNi41ODk2NSwwLDAsMSwuMjUzOS0xLjgyNDIuOTk5NzcuOTk5NzcsMCwxLDEsMS45MjE5LjU1MThBNC42MzI2Niw0LjYzMjY2LDAsMCwwLDQuMDAxLDcuMDczN2MwLDQuMTA3OSw1LjAxNDYsNy44MDQ3LDUuOTc0Niw3LjkyNzMuOTA5Mi0uMTIyMSw1LjkyNDgtMy44MTc5LDUuOTI0OC03LjkyNzNhNC42NDI1NSw0LjY0MjU1LDAsMCwwLS4xNzY4LTEuMjc0NEEyLjUwMjU3LDIuNTAyNTcsMCwwLDAsMTMuMzIyMyw0YTIuNjY1ODMsMi42NjU4MywwLDAsMC0yLjQ0MzQsMS44OTU1LDEuMDAwNDUsMS4wMDA0NSwwLDAsMS0xLjg1NzQsMEEyLjYzNjY3LDIuNjM2NjcsMCwwLDAsNi4yMTY4LDQuMDI2OSwxLDEsMCwxLDEsNS45MTgsMi4wNDkzLDQuNDI2NDEsNC40MjY0MSwwLDAsMSw2LjU3ODEsMiw0LjM1NzU4LDQuMzU3NTgsMCwwLDEsOS45NTAyLDMuNTg4NCw0LjM1NzU4LDQuMzU3NTgsMCwwLDEsMTMuMzIyMywyYTQuNTEwNTEsNC41MTA1MSwwLDAsMSw0LjMyNDIsMy4yNDksNi42NTcsNi42NTcsMCwwLDEsLjI1MzksMS44MjQ3QzE3LjkwMDQsMTIuMzA3NiwxMS43ODQyLDE3LDkuOTUwMiwxN1oiIHN0eWxlPSJmaWxsOiMzMzMiLz48cGF0aCBkPSJNMTMuOTUwMiwyMWE1LjQyODM1LDUuNDI4MzUsMCwwLDEtMi42MTkxLTEuMTg5LDEuMDAwMTQsMS4wMDAxNCwwLDAsMSwxLjE3MTgtMS42MjExLDQuNjAzNDIsNC42MDM0MiwwLDAsMCwxLjQ3MjcuODExMSwxMS4yNDY0OCwxMS4yNDY0OCwwLDAsMCw0LjYxNDItNC4xMjcsNi4zMDE1Miw2LjMwMTUyLDAsMCwwLDEuMTMyOS01LjA3NTIsMi40MDQxLDIuNDA0MSwwLDAsMC0uNDg0NC0uOTExMSwxLDEsMCwxLDEsMS41MjM0LTEuMjk1OSw0LjQxNzQ5LDQuNDE3NDksMCwwLDEsLjg4NDgsMS42NTcyYy42NjgsMi4zMzk5LjAxOTUsNC45MDUzLTEuODc2LDcuNDE4NUMxOC4wMzAzLDE4Ljk3NTYsMTUuMzA5NiwyMSwxMy45NTAyLDIxWiIgc3R5bGU9ImZpbGw6IzMzMyIvPjwvc3ZnPg==);
+        position: absolute;
+        transform: rotate(26deg) scale(4.5);
+        opacity: 0.3;
+        z-index: -1;
+        bottom: 22px;
+        right: 90px;
+      }
+    }
+  }
+}
+
+@keyframes fbCardCircleAni {
+  0% {
+    border-radius: 30%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  100% {
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}

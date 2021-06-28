@@ -1,0 +1,74 @@
+.footerSection {
+  .footerSection__messagebox {
+    .messagebox {
+      .card-body {
+        background: #e5f4f4;
+      }
+
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        border-width: 12px;
+        border-style: solid;
+        border-color: #e5f4f4 transparent transparent;
+        top: 87%;
+        left: 18%;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .list-group-item {
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 0px;
+
+    .footer--sublink__title {
+      font-size: 19px;
+      display: inline-block;
+      margin-bottom: 7px;
+      font-weight: 400;
+    }
+
+    .footer--sublink {
+      text-decoration: none;
+      color: rgb(70, 70, 70);
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        color: $info-color;
+        transition: color 0.3s;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: $info-color;
+        top: 100%;
+      }
+      &:hover::before {
+        width: 100%;
+        transition: width 0.3s cubic-bezier(0, -1.37, 1, 1);
+      }
+    }
+  }
+
+  .footer--owner__info {
+    .coder__name {
+      font-size: 19px;
+      background: -webkit-linear-gradient(#ffc107, #ff3860);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 3px 7px 4px #00000070;
+    }
+
+    .footer--social-link-img {
+      width: 25px;
+      margin-right: 15px;
+    }
+  }
+}

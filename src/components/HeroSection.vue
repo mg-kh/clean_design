@@ -3,8 +3,11 @@
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide>
         <b-row class="swiper__arrow-space align-items-center py-5">
-          <b-col cols="12" md="6" class="p-lg-5">
-            <article class="hero__text" v-animate-css="'fadeInLeft'">
+          <b-col cols="12" md="6" class="p-lg-5 mb-5 mb-md-0">
+            <article
+              class="hero__text text-md-right"
+              v-animate-css="'fadeInLeft'"
+            >
               <h3 class="m-0">Better software make more clients.</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
@@ -21,6 +24,7 @@
               >
             </article>
           </b-col>
+
           <b-col cols="12" md="6" class="p-lg-5">
             <div class="p-3" v-animate-css="'fadeInRight'">
               <img
@@ -35,12 +39,17 @@
 
       <swiper-slide>
         <b-row class="swiper__arrow-space align-items-center py-5">
-          <b-col cols="12" md="6" class="p-lg-5">
-            <article class="hero__text" v-animate-css="'fadeInLeft'">
+          <b-col cols="12" md="6" class="p-lg-5 mb-5 mb-md-0">
+            <article
+              class="hero__text text-md-right"
+              v-animate-css="'fadeInLeft'"
+            >
               <h3 class="m-0">Clean and effective</h3>
               <p>
-                Finding amazing website with clean ui. Yeap this is the right
-                place.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                eligendi quasi natus nobis repellendus, pariatur aspernatur!
+                Sequi repellat ipsam perspiciatis iste maiores culpa blanditiis
+                quia est? Molestias iusto id sed.
               </p>
 
               <b-button
@@ -52,6 +61,7 @@
               >
             </article>
           </b-col>
+
           <b-col cols="12" md="6" class="p-lg-5">
             <div class="p-3" v-animate-css="'fadeInRight'">
               <img
@@ -63,6 +73,7 @@
           </b-col>
         </b-row>
       </swiper-slide>
+
       <div
         v-animate-css.hover="'pulse'"
         class="swiper-button-prev"

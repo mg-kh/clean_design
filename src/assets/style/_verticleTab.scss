@@ -1,37 +1,36 @@
 .verticleTab {
-     background: linear-gradient(45deg, #00d0b2, #ffffff00);
+  background-image: linear-gradient(120deg, #84faafc0 0%, #8fd3f4 100%);
+  .card {
+    cursor: pointer;
+  }
 
-     .card {
-          cursor: pointer;
-     }
+  .verticleTab__thumb__img {
+    background-color: #ffffff54;
+    max-width: 65px;
+    border-radius: 13px;
+    padding: 10px;
+  }
 
-     .verticleTab__thumb__img {
-          background-color: #ffffff54;
-          max-width: 65px;
-          border-radius: 13px;
-          padding: 10px;
-     }
+  .verticleTab__thumb__title {
+    font-size: 28px;
+    color: #ffffff9e;
+    padding-left: 25px;
+  }
 
-     .verticleTab__thumb__title {
-          font-size: 28px;
-          color: #ffffff9e;
-          padding-left: 25px;
-     }
+  .verticleTab__thumb__text {
+    font-size: 16px;
+    padding: 10px 0px;
+    color: #ffffff9e;
+  }
 
-     .verticleTab__thumb__text {
-          font-size: 16px;
-          padding: 10px 0px;
-          color: #ffffff9e;
-     }
+  .active {
+    .verticleTab__thumb__img {
+      background-color: $distinct-color;
+    }
 
-     .active {
-          .verticleTab__thumb__img {
-               background-color: $distinct-color;
-          }
-
-          .verticleTab__thumb__title,
-          .verticleTab__thumb__text {
-               color: white;
-          }
-     }
+    .verticleTab__thumb__title,
+    .verticleTab__thumb__text {
+      color: white;
+    }
+  }
 }
