@@ -7,11 +7,11 @@
 
 <script>
 import TheNavbar from "@/components/TheNavbar";
-// let rootPath = "https://clean-design.netlify.app/";
+let rootPath = "https://clean-design.netlify.app";
 export default {
   data() {
     return {
-      // logo: rootPath + require("./assets/images/coffee_cup.png"),
+      logo: rootPath + require("./assets/images/coffee_cup.png"),
     };
   },
   components: {
@@ -24,10 +24,7 @@ export default {
         { property: "og:title", content: "Vue static web design" },
         { property: "og:site_name", content: "Clean Design" },
         { property: "og:type", content: "website" },
-        {
-          property: "og:image",
-          content: "https://picsum.photos/id/2/300/300",
-        },
+        { property: "og:image", content: this.logo },
         {
           property: "og:description",
           content: "Transform coffee into ideas!",
