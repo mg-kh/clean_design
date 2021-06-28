@@ -26,8 +26,7 @@ export default {
         { property: "og:type", content: "website" },
         {
           property: "og:image",
-          content:
-            "https://clean-design.netlify.app//assets/images/coffee_cup.png",
+          content: "https://picsum.photos/id/2/300/300",
         },
         {
           property: "og:description",
