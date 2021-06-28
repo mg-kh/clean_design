@@ -7,8 +7,13 @@
 
 <script>
 import TheNavbar from "@/components/TheNavbar";
-// let rootPath = ''
+let rootPath = "https://clean-design.netlify.app/";
 export default {
+  data() {
+    return {
+      logo: rootPath + require("./assets/images/coffee_cup.png"),
+    };
+  },
   components: {
     TheNavbar,
   },
@@ -26,9 +31,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    console.log(require("./assets/images/bg.png"));
   },
 };
 </script>
