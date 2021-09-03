@@ -1,4 +1,4 @@
-# vue2
+# Vue2 Template
 
 ## Project setup
 ```
@@ -15,15 +15,5 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Landing page look like this
+![screencapture-clean-design-netlify-app-2021-09-03-20_18_43](https://user-images.githubusercontent.com/47512802/132017195-b8253362-c9d8-451d-91a8-83f55fb7d23b.png)
